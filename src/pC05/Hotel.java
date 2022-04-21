@@ -194,4 +194,13 @@ public class Hotel implements Serializable {
 
         p.setX(c);
     }
+
+
+    public boolean estaHotel (Cliente cliente, int DNI){
+        if (DNI == cliente.getDNI()){
+            return true;
+        } else{
+            return false;
+        }
+    }
 }
